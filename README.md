@@ -37,6 +37,10 @@
 | √         | ![squrt](./imgs/ex/square_x.svg) | 2 的平方根 |
 | ∜         | ![squrt_n](./imgs/ex/square_n_x.svg) | 2 的 4次 方根 |
 
+##### 基础知识
+- ![square_role1](./imgs/square/square_role1.svg)
+- ![square_role2](./imgs/square/square_role2.svg)
+
 #### 二元运算符
 
 |  符号       | 例子     | 含义     |
@@ -56,13 +60,14 @@
 | ≪           | 2 ≪ 1000 | 2 远远小于 1000 |
 | ≫           | 1000 ≫ 2    | 1000 远远大于 2 |
 
-####
-- d | a iff -d | a
-
+##### 基础知识
+- 算术平均：μ = ![avg_1](./imgs/avg/avg_1.svg)
+- 几何平均：μ = ![avg_2](./imgs/avg/avg_2.svg)
+- 调和平均：μ = ![avg_3](./imgs/avg/avg_3.svg)
+- 最小公倍数：gcd(a, b) = gcd(b % a, a)
 
 ##### 相关算法
 - [A fast alternative to the modulo reduction](https://lemire.me/blog/2016/06/27/a-fast-alternative-to-the-modulo-reduction/)
-- [GCD]()
 
 
 #### 位运算
@@ -105,15 +110,7 @@
 
 <img src="./imgs/chart.xkcd/polo.png" width="600">
 
-##### 基本知识
-- 任何不为 0 的数 x 的 -1 次方等于它的倒数
-- 1 的任何次幂都为 1
-- 0 的正数幂都等于 0。0 的负数幂没有定义。
-- 任何非 0 之数的 0 次方都是 1
-- -1 的奇数幂等于 -1
-- -1 的偶数幂等于 1
-
-##### 运算法则
+##### 基础知识
 - ![ex1](./imgs/ex/ex1.svg)
 - ![ex2](./imgs/ex/ex2.svg)
 - ![ex3](./imgs/ex/ex3.svg)
@@ -130,24 +127,18 @@
 
 <img src="./imgs/chart.xkcd/ex.png" width="600">
 
-##### 基本知识
-
-##### 运算法则
-
-
 #### 对数
 
 ##### 定义
-
 
 <img src="./imgs/chart.xkcd/log.png" width="600">
 
 |  符号     | 例子     | 含义       |
 |  :----:   | :----:   | :----:     |
 | log       | ![log](./imgs/log/log.svg) = 2 | 以 10 为底，100 的对数 |
-| ln       | ![ln](./imgs/log/ln.svg)| 等于 ![loge](./imgs/log/loge.svg)  |
+| ln       | ![ln](./imgs/log/ln.svg)| ![loge](./imgs/log/loge.svg)  |
 
-##### 运算法则
+##### 基础知识
 - ![log1](./imgs/log/log1.svg)
 - ![log2](./imgs/log/log2.svg)
 - ![log3](./imgs/log/log3.svg)
@@ -165,7 +156,7 @@
 |  P(A)     | P(A) = 0.5 | A 事件发生的概率 |
 |  ∩        | P(A ∩ B) = 0.5 | A，B 事件同时发生的概率 |
 |  ∪        | P(A ∪ B) = 0.5 | A 或 B 事件发生的概率 |
-|  \|       | P(A | B) = 0.5 | B 事件发生的情况下，A 事件发生的概率 |
+|  \|       | P(A \| B) = 0.5 | B 事件发生的情况下，A 事件发生的概率 |
 |  E        | E(A) = 2   | A 事件的期望值 |
 |  var(X)   | var(X) = 2 | X 变量的方差 |
 |  σ        | σ = 2      | X 变量的标准差 |
@@ -176,8 +167,13 @@
 
 |  符号     | 例子         | 含义     |
 |  :----:   | :----:       | :----:   |
-|  P(n, r) 或 ![pnr](./imgs/sta/pnr_format.svg)  | P(5, 3) = 60 | ![pnr](./imgs/sta/pnr.svg) - 5个 物件中任取 3个 的排列数量 |
-|  C(n, r) 或 ![cnr](./imgs/sta/cnr_format.svg) 或 ![cnr2](./imgs/sta/cnr_format2.svg) | C(5, 3) = 10 | ![cnr](./imgs/sta/cnr.svg) - 5个 物件中任取 3个 的组合数量 |
+|  P(n, r) 或 ![pnr](./imgs/sta/pnr_format.svg)  | P(5, 3) = 60 | ![pnr](./imgs/sta/pnr.svg) : 5个 物件中任取 3个 的排列数量 |
+|  C(n, r) 或 ![cnr](./imgs/sta/cnr_format.svg) 或 ![cnr2](./imgs/sta/cnr_format2.svg) | C(5, 3) = 10 | ![cnr](./imgs/sta/cnr.svg) : 5个 物件中任取 3个 的组合数量 |
+
+##### 运算法则
+
+- 条件概率：![pro](./imgs/pro.svg)
+- 贝叶斯公式：![bayes](./imgs/bayes.svg)
 
 #### 集合
 |  符号     | 例子         | 含义     |
@@ -197,11 +193,18 @@
 |   ℕ₀      | ℕ₀ = {0, 1, 2, 3, ...} | 自然数的集合 | 
 |   ℕ₁      | ℕ₁ = {1, 2, 3, 4, ...} | 正整数的集合 |
 |   ℤ       | ℤ = {..., -1, 0, 1, ...} | 整数的集合 |
-|   ℚ       | ℚ = {x| x = a/b, a∈ℕ₀, b∈ℕ₁ | 有理数的集合 |
-|   ℝ       | ℝ = {x| -∞ < x <∞} | 实数的集合 |
+|   ℚ       | ℚ = {x\| x = a/b, a∈ℕ₀, b∈ℕ₁ | 有理数的集合 |
+|   ℝ       | ℝ = {x\| -∞ < x <∞} | 实数的集合 |
 |   ∀       | ∀ a ∈ (1, 2, 3) | 对于集合里所有元素 |
 |   ∃       | ∃ a ∈ (1, 2, 3) | 存在一个元素 |
 |   ∄       | ∄ a ∈ (1, 2, 3) | 不存在一个元素 |
+| ⇒         | a = 2 ⇒ a ∈ ℕ₁ | 推理出 |
+| ⇔         | a = 2 ⇔ 2a = 4 | 当且仅当 |
+
+##### 运算法则
+- 交换律：A ∪ B=B ∪ A
+- 结合律：(A ∪ B) ∪ C = A ∪ (B ∪ C)
+- 分配律：(A ∪ B) ∩ C =(A ∩ C) ∪ (B ∩ C)
 
 
 #### 线性代数
